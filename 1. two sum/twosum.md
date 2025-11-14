@@ -7,6 +7,7 @@ the most intuitive way of solving this problem is to brute force it: iterate thr
 
 a hashmap can store key-value pairs, and by adding every value in `nums` as the hashmap's key and its index as the hashmap's value, we can very quickly search through the hashmap for `target - nums[x]`. when found, we can then extract the index to be returned in the end. The pair would look like: `<number, index>`. 
 
+
 ## Findings & Things Learnt
 
 ### Java
@@ -16,7 +17,13 @@ a hashmap can store key-value pairs, and by adding every value in `nums` as the 
 - `map.get(y)`: search a map's value `y` in `<key, value>` pair
 - the return data type is determined by the method's data type
 
+
 ## Research Results
+
+1. `return new int[] {i, j};`
+this returns an array that's initialized at runtime and directly in the return statement, without needing to assign it variables. in this case  `i` and `j` do already have values, but i've seen more people use this technique to clean up code and make initialization more readable and concise. 
+
+2. 
 
 ## Possible Edge Cases (For Secure Programming)
 
@@ -24,6 +31,7 @@ a hashmap can store key-value pairs, and by adding every value in `nums` as the 
 - negative number elements or zeroes
 - multiple elements matching target
 - target not found; throw an error
+
 
 ## Leetcode Tips
 
