@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 
+// bruteforce
+
 class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
@@ -14,6 +16,8 @@ class TwoSum {
         return new int[] {};
     }
 }
+
+// use hashmap
 
 class TwoSumII {
     public int[] twoSum(int[] nums, int target) {
@@ -37,4 +41,6 @@ class TwoSumII {
  * research: new int[] {i, j};
  * research: ln 20, Map ... new HashMap?
  * findings: the "public" data type specifies the return data type
+ * learn: map.put, containsKey(), get()
+ * tips: avoid nested loops if possible; use hashmaps instead 
  */
