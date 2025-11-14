@@ -1,0 +1,39 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class TwoSum {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i+1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[] {i, j};
+                }
+            }
+        }
+
+        return new int[] {};
+    }
+}
+
+ class TwoSumII {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> m = new HashMap<> ();
+        for (int i = 0; i < nums.length; i++) {
+            m.put(nums[i], i);
+        }
+
+        for (int j = 0; j < nums.length; j++) {
+            int x = target - nums[j];
+            if (m.containsKey(x) && m.get(x) != j) {
+                return new int[] {j, m.get(x)};
+            }
+        }
+
+        return new int[] {};
+    }
+ }
+
+ /* 
+ * research: new int[] {i, j};
+ * findings: the "public" data type specifies the return data type
+ */
