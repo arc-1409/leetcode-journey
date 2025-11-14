@@ -12,3 +12,6 @@ a hashmap can store key-value pairs, and by adding every value in `nums` as the 
 ### research results
 
 ### leetcode tips
+
+- avoid nested loops if possible; it's much slower with the O(n^2) quadratic time complexity, where n is the length of the array
+- use hashmaps instead to easily look up target and target index
