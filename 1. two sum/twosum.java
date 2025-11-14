@@ -15,7 +15,7 @@ class TwoSum {
     }
 }
 
- class TwoSumII {
+class TwoSumII {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> m = new HashMap<> ();
         for (int i = 0; i < nums.length; i++) {
@@ -35,5 +35,6 @@ class TwoSum {
 
  /* 
  * research: new int[] {i, j};
+ * research: ln 20, Map ... new HashMap?
  * findings: the "public" data type specifies the return data type
  */
