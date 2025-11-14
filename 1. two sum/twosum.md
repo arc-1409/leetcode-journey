@@ -1,7 +1,7 @@
 ### problem
 
-level: easy\n
-tags: array, hash table
+- level: easy
+- tags: array, hash table
 
 the most intuitive way of solving this problem is to brute force it: iterate through every index (`x = 0`), and then use a nested for loop to iterate through the rest of the indices (`y = x+1`). but that's one extra variable space to keep track of (`y`), when it can be replaced by `target - nums[x]`. 
 
