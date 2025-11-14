@@ -1,4 +1,4 @@
-### Problem
+## Problem
 
 - level: easy
 - tags: array, hash table
@@ -7,25 +7,25 @@ the most intuitive way of solving this problem is to brute force it: iterate thr
 
 a hashmap can store key-value pairs, and by adding every value in `nums` as the hashmap's key and its index as the hashmap's value, we can very quickly search through the hashmap for `target - nums[x]`. when found, we can then extract the index to be returned in the end. The pair would look like: `<number, index>`. 
 
-### Findings & Things Learnt
+## Findings & Things Learnt
 
-#### Java
+### Java
 
 - `map.put()`: add element to map
 - `map.containsKey(x)`: search a map's key `x` in `<key, value>` pair
 - `map.get(y)`: search a map's value `y` in `<key, value>` pair
 - the return data type is determined by the method's data type
 
-### Research Results
+## Research Results
 
-### Possible Edge Cases (For Secure Programming)
+## Possible Edge Cases (For Secure Programming)
 
 - exactly two elements in `nums`
 - negative number elements or zeroes
 - multiple elements matching target
 - target not found; throw an error
 
-### Leetcode Tips
+## Leetcode Tips
 
 - avoid nested loops if possible; it's much slower with the O(n^2) quadratic time complexity, where n is the length of the array
 - use hashmaps instead to easily look up target and target index
