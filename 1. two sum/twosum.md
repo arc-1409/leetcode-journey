@@ -11,6 +11,13 @@ a hashmap can store key-value pairs, and by adding every value in `nums` as the 
 
 ### research results
 
+### possible edge cases (for secure programming)
+
+- exactly two elements in `nums`
+- negative number elements or zeroes
+- multiple elements matching target
+- target not found; throw an error
+
 ### leetcode tips
 
 - avoid nested loops if possible; it's much slower with the O(n^2) quadratic time complexity, where n is the length of the array
