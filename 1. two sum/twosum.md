@@ -34,7 +34,7 @@ this returns an array that's initialized at runtime and directly in the return s
 
 ## Sources
 
-[return an array without assigning variables](https://stackoverflow.com/questions/9331837/returning-an-array-without-assign-to-a-variable)
+- [return an array without assigning variables - stackoverflow](https://stackoverflow.com/questions/9331837/returning-an-array-without-assign-to-a-variable)
 
 
 ## Leetcode Tips
