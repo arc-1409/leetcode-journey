@@ -32,6 +32,10 @@ this returns an array that's initialized at runtime and directly in the return s
 - multiple elements matching target
 - target not found; throw an error
 
+## Sources
+
+[return an array without assigning variables](https://stackoverflow.com/questions/9331837/returning-an-array-without-assign-to-a-variable)
+
 
 ## Leetcode Tips
 
