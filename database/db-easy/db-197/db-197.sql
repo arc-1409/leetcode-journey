@@ -1,0 +1,1 @@
+select w1.id from weather w1 inner join weather w2 on w2.recordDate = subdate(w1.recordDate, 1) and w1.temperature > w2.temperature;
